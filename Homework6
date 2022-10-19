@@ -26,7 +26,23 @@ class Program
          s2.class_Enroll = "Math";
          s2.stu_Grade = 80;
          s2.PrintInfo();
+         }
+        }
+        
+        class Professor{
+    public string prof_Name;
+    public string class_Teach;
+    public int salary;
+    public void PrintInfo(){
+        Console.WriteLine($"Professor {prof_Name} teaches {class_Teach}, and the salary is: {salary}");
+    }
+}
 
-         
+class Student{
+    public string stu_Name;
+    public string class_Enroll;
+    public int stu_Grade;
+    public void PrintInfo(){
+        Console.WriteLine($"Student {stu_Name} enrolls {class_Enroll}, and the grade is: {stu_Grade}");
     }
 }
